@@ -13,19 +13,25 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
-          <div className="flex items-center gap-12">
-            <div className="relative p-6 bg-blue-100 rounded-full shadow-xl">
-              <Image 
-                src="/IMG-20240827-WA0030.jpg" 
-                alt="Galaxy Packaging Logo" 
-                width={200} 
-                height={200} 
-                className="object-contain rounded-full absolute inset-0 m-auto"
-              />
+          <div className="flex items-center gap-8">
+            <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 p-1 shadow-lg">
+              <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
+                <Image 
+                  src="/IMG-20240827-WA0030.jpg" 
+                  alt="Galaxy Packaging Logo" 
+                  width={200} 
+                  height={200} 
+                  className="object-contain rounded-full"
+                />
+              </div>
             </div>
             <div className="hidden sm:block">
-              <p className="text-lg text-blue-700 font-semibold">AN ISO 9001:2015, ISO 22000:2018</p>
-              <p className="text-lg text-blue-700 font-semibold">& SEDEX SMETA CERTIFIED COMPANY</p>
+              <p className="text-xl md:text-2xl text-blue-700 font-bold">
+                AN ISO 9001:2015, ISO 22000:2018
+              </p>
+              <p className="text-xl md:text-2xl text-blue-700 font-bold">
+                & SEDEX SMETA CERTIFIED COMPANY
+              </p>
             </div>
           </div>
 

@@ -7,10 +7,10 @@ export function Contact() {
   return (
     <div className="py-20 bg-blue-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-blue-900">
+        <h2 className="text-5xl font-bold mb-12 text-center text-blue-900">
           Contact <span className="text-orange-500">Us</span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-blue-900">Get in Touch</h3>
             <div className="space-y-4">
@@ -46,13 +46,13 @@ export function Contact() {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="flex flex-col items-center">
             <Image 
               src="/contact.png?height=400&width=600" 
               alt="Factory Floor" 
               width={600} 
               height={400} 
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg animate-float"
             />
             <p className="mt-4 text-center text-xl font-semibold text-blue-900">
               Better Packaging, <span className="text-orange-500">Better Life.</span>
@@ -60,7 +60,22 @@ export function Contact() {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   )
 }
-
