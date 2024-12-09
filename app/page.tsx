@@ -2,6 +2,7 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Products } from '@/components/Products'
 import { Machinery } from '@/components/Machinery'
+import { ClientShowcase } from '@/components/ClientshowCase'
 import { CompanyProfile } from '@/components/CompanyProfile'
 import { Contact } from '@/components/Contact'
 import { AlertScreen } from '@/components/AlertScreen'
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <Products />
+        <ClientShowcase />
         <Machinery />
         <CompanyProfile />
         <Contact />
